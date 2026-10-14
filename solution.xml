@@ -1,0 +1,180 @@
+<ImportExportXml version="9.2.26094.142" SolutionPackageVersion="9.2" languagecode="3082" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26094.142" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26094.00146">
+  <SolutionManifest>
+    <UniqueName>demo_rpa_movimientos_bancarios</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="demo_rpa_movimientos_bancarios" languagecode="3082" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.14</Version>
+    <Managed>1</Managed>
+    <Publisher>
+      <UniqueName>DefaultPublisherorg8ce2a732</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Editor predeterminado para org8ce2a732" languagecode="3082" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="Editor predeterminado para esta organización" languagecode="3082" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>new</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="29" id="{209d28bd-64c1-ef11-a72e-6045bd3adf50}" behavior="0" />
+      <RootComponent type="29" id="{44945cc2-7e27-f011-8c4d-6045bd3a659a}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{23141466-9dae-4f23-8b16-bb88cc22a62b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{4c12c675-70cf-4e11-a535-64f7a3e47236}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{60519802-e979-468c-a8ac-8c4b568d0eac}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{69a1d0b8-5c84-4b1a-b90f-a36ceefc0b9f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{92756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{93707d28-940f-4d95-a750-e837c3e82c11}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{9a756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{9c756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{9e756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{a3756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{a5756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{a7756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{a9756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{b1756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{b3756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{b3e64213-bc6d-4ad4-8d17-e65ac2969b66}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{b5756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{b7756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{b9756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{bb756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{bd756aa5-09ac-ef11-8a69-002248def814}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{d7e510af-8001-4c40-bd5c-2101646b2777}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="PRD - RPA Proceso PEDIDOS" solution="Active" id="{2594689f-09ac-ef11-8a69-002248def814}" />
+        <Dependent type="desktopflowbinary" id="{ecfc0f44-76f5-46b2-8260-0bd030431e80}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

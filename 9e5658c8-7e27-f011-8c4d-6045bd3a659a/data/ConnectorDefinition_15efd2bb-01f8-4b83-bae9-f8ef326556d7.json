@@ -1,0 +1,287 @@
+{
+  "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_office365",
+  "Definition": {
+    "Id": "/providers/Microsoft.PowerApps/apis/shared_office365",
+    "Name": "shared_office365",
+    "Properties": {
+      "IsCustomApi": false,
+      "Swagger": {
+        "basePath": "/apim/office365",
+        "definitions": {
+          "ClientSendHtmlMessage": {
+            "additionalProperties": null,
+            "example": null,
+            "properties": {
+              "To": {
+                "additionalProperties": null,
+                "x-ms-dynamic-list": {
+                  "builtInOperation": "AadGraph.GetUsers",
+                  "itemValuePath": "mail",
+                  "parameters": {}
+                },
+                "example": null,
+                "type": "string",
+                "default": null,
+                "description": "Especifique las direcciones de correo electrónico separadas por punto y coma como alguien@contoso.com",
+                "format": "email",
+                "x-ms-summary": "A",
+                "x-ms-name-for-model": "send_email_v2_to",
+                "x-ms-description-for-model": "Set to the primary recipient email address or addresses, separated by semicolons. Example: alice@example.com;bob@example.com."
+              },
+              "Subject": {
+                "additionalProperties": null,
+                "example": null,
+                "type": "string",
+                "default": null,
+                "description": "Especifique el asunto del correo.",
+                "x-ms-summary": "Asunto",
+                "x-ms-name-for-model": "send_email_v2_subject",
+                "x-ms-description-for-model": "Set to a short, specific subject that matches the email's purpose, deriving it from the user intent, instructions, or conversation if not given. Example: Weekly Project Status Update, Please Submit Outstanding Invoices, Quarterly Town Hall - Thursday 3 PM"
+              },
+              "Body": {
+                "additionalProperties": null,
+                "example": null,
+                "type": "string",
+                "default": null,
+                "description": "Especifique el cuerpo del correo.",
+                "format": "html",
+                "x-ms-summary": "Cuerpo",
+                "x-ms-name-for-model": "send_email_v2_body",
+                "x-ms-description-for-model": "Set to the full email body as HTML or plain text using details from the conversation. Example: Hi team,<br/>Please review the attached proposal by Friday…<br/>Thanks!."
+              },
+              "From": {
+                "additionalProperties": null,
+                "example": null,
+                "type": "string",
+                "default": null,
+                "description": "Dirección de correo electrónico desde la que se enviará el correo (requiere el permiso \"Enviar como\" o \"Enviar en nombre de\" para el buzón en cuestión). Para obtener más información sobre la concesión de permisos, consulte https://docs.microsoft.com/office365/admin/manage/send-email-as-distribution-list",
+                "format": "email",
+                "x-ms-summary": "Remitente (enviar como)",
+                "x-ms-visibility": "advanced",
+                "x-ms-name-for-model": "send_email_v2_from",
+                "x-ms-description-for-model": "Set to the sender mailbox address when the email must come from a different email address. Example: billing@example.com."
+              },
+              "Cc": {
+                "additionalProperties": null,
+                "x-ms-dynamic-list": {
+                  "builtInOperation": "AadGraph.GetUsers",
+                  "itemValuePath": "mail",
+                  "parameters": {}
+                },
+                "example": null,
+                "type": "string",
+                "default": null,
+                "description": "Especifique las direcciones de correo electrónico separadas por punto y coma como alguien@contoso.com",
+                "format": "email",
+                "x-ms-summary": "CC",
+                "x-ms-visibility": "advanced",
+                "x-ms-name-for-model": "send_email_v2_cc",
+                "x-ms-description-for-model": "Set to CC recipient email addresses when others should visibly receive a copy, separated by semicolons. Example: manager@example.com;pm@example.com."
+              },
+              "Bcc": {
+                "additionalProperties": null,
+                "x-ms-dynamic-list": {
+                  "builtInOperation": "AadGraph.GetUsers",
+                  "itemValuePath": "mail",
+                  "parameters": {}
+                },
+                "example": null,
+                "type": "string",
+                "default": null,
+                "description": "Especifique las direcciones de correo electrónico separadas por punto y coma como alguien@contoso.com",
+                "format": "email",
+                "x-ms-summary": "CCO",
+                "x-ms-visibility": "advanced",
+                "x-ms-name-for-model": "send_email_v2_bcc",
+                "x-ms-description-for-model": "Set to BCC recipient email addresses when others should receive a hidden copy, separated by semicolons. Example: audit@example.com;compliance@example.com."
+              },
+              "Attachments": {
+                "additionalProperties": null,
+                "example": null,
+                "items": {
+                  "additionalProperties": null,
+                  "example": null,
+                  "$ref": "#/definitions/ClientSendAttachment",
+                  "default": null
+                },
+                "type": "array",
+                "default": null,
+                "description": "Datos adjuntos",
+                "x-ms-summary": "Datos adjuntos",
+                "x-ms-visibility": "advanced",
+                "x-ms-name-for-model": "send_email_v2_attachments",
+                "x-ms-description-for-model": "Set to the attachments to send when the user provides a file(s)."
+              },
+              "Sensitivity": {
+                "additionalProperties": null,
+                "x-ms-dynamic-list": {
+                  "itemTitlePath": "DisplayName",
+                  "itemValuePath": "Id",
+                  "operationId": "GetSensitivityLabels",
+                  "parameters": {}
+                },
+                "example": null,
+                "type": "string",
+                "default": null,
+                "description": "Confidencialidad",
+                "x-ms-summary": "Confidencialidad",
+                "x-ms-visibility": "important",
+                "x-ms-name-for-model": "send_email_v2_sensitivity",
+                "x-ms-description-for-model": "Set to the Outlook sensitivity label ID when information protection is required. This is a tenant-specific label from Microsoft 365 sensitivity labels."
+              },
+              "ReplyTo": {
+                "additionalProperties": null,
+                "example": null,
+                "type": "string",
+                "default": null,
+                "description": "Las direcciones de correo electrónico que se usarán al responder",
+                "format": "email",
+                "x-ms-summary": "Responder a",
+                "x-ms-visibility": "advanced",
+                "x-ms-name-for-model": "send_email_v2_reply_to",
+                "x-ms-description-for-model": "Set to the email address or addresses, separated by semicolons, where replies should go if different from the sender's email address. Example: support@example.com;helpdesk@example.com."
+              },
+              "Importance": {
+                "additionalProperties": null,
+                "example": null,
+                "type": "string",
+                "default": "Normal",
+                "description": "Importancia",
+                "enum": [
+                  "Low",
+                  "Normal",
+                  "High"
+                ],
+                "x-ms-summary": "Importancia",
+                "x-ms-visibility": "advanced",
+                "x-ms-name-for-model": "send_email_v2_importance",
+                "x-ms-description-for-model": "Set to the email importance when urgency is stated or implied. Choose ONLY between Low, Normal, High. Example: 'High' for urgent requests."
+              }
+            },
+            "required": [
+              "To",
+              "Subject",
+              "Body"
+            ],
+            "type": "object",
+            "default": null,
+            "description": "Enviar mensaje de correo electrónico HTML"
+          },
+          "ClientSendAttachment": {
+            "additionalProperties": null,
+            "example": null,
+            "properties": {
+              "Name": {
+                "additionalProperties": null,
+                "example": null,
+                "type": "string",
+                "default": null,
+                "description": "Nombre de datos adjuntos",
+                "x-ms-summary": "Nombre",
+                "x-ms-name-for-model": "office365users_clientsendattachment_name",
+                "x-ms-description-for-model": "Set to the attachment file name the recipient will see when sending an attachment, including extension. Example: request-details.pdf."
+              },
+              "ContentBytes": {
+                "additionalProperties": null,
+                "example": null,
+                "type": "string",
+                "default": null,
+                "description": "Contenido de datos adjuntos",
+                "format": "byte",
+                "x-ms-summary": "Contenido",
+                "x-ms-name-for-model": "office365users_clientsendattachment_content_bytes",
+                "x-ms-description-for-model": "Set to the attachment file content as bytes, usually a base64 string from a previous action such as Get file content. Use only when sending an attachment."
+              }
+            },
+            "required": [
+              "Name",
+              "ContentBytes"
+            ],
+            "type": "object",
+            "default": null,
+            "description": "Datos adjuntos"
+          }
+        },
+        "host": "brazil-001.azure-apim.net",
+        "info": {
+          "title": "Office 365 Outlook",
+          "version": "1.0"
+        },
+        "parameters": {},
+        "paths": {
+          "/{connectionId}/v2/Mail": {
+            "post": {
+              "consumes": [
+                "application/json",
+                "text/json",
+                "application/xml",
+                "text/xml",
+                "application/x-www-form-urlencoded"
+              ],
+              "deprecated": false,
+              "description": "Esta operación envía un mensaje de correo electrónico.",
+              "externalDocs": {
+                "url": "https://docs.microsoft.com/connectors/office365/#send-an-email-(v2)"
+              },
+              "operationId": "SendEmailV2",
+              "parameters": [
+                {
+                  "in": "path",
+                  "name": "connectionId",
+                  "required": true,
+                  "type": "string",
+                  "default": null,
+                  "x-ms-visibility": "internal"
+                },
+                {
+                  "in": "body",
+                  "name": "emailMessage",
+                  "required": true,
+                  "schema": {
+                    "additionalProperties": null,
+                    "example": null,
+                    "$ref": "#/definitions/ClientSendHtmlMessage",
+                    "default": null
+                  },
+                  "default": null,
+                  "description": "Correo electrónico.",
+                  "x-ms-summary": "Correo electrónico"
+                }
+              ],
+              "produces": [],
+              "responses": {
+                "200": {
+                  "description": "La operación se completó correctamente."
+                },
+                "400": {
+                  "description": "BadRequest"
+                },
+                "401": {
+                  "description": "No autorizado"
+                },
+                "403": {
+                  "description": "Prohibido"
+                },
+                "500": {
+                  "description": "Error interno del servidor"
+                },
+                "default": {
+                  "description": "Error de la operación."
+                }
+              },
+              "summary": "Enviar correo electrónico (V2)",
+              "x-ms-visibility": "important"
+            }
+          }
+        },
+        "responses": {},
+        "schemes": [
+          "https"
+        ],
+        "swagger": "2.0"
+      }
+    }
+  },
+  "DynamicSchemas": {},
+  "Locale": "es-PE"
+}
